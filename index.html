@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+	<head>
+
+		<!-- Magnani Marco 153200 -->
+
+		<!-- Import file css -->
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+
+		<!-- Option page -->
+		<title>Ianna's plane</title>
+
+		<script type="text/javascript">
+			// I use this function to set the mode choose by user.
+			function setDiff() {
+				var selectElement = document.getElementById("diff").value;
+				document.cookie = "ModeIannaPlane="+selectElement;
+			}
+		</script>
+	</head>
+	<body>
+		<div id="container" align="center">
+			<h1><u>Ianna's plane</u></h1>
+			<h1>Final Project. Interactive Graphics 2018/2019</h1>
+			<h2>Prof. Marco Schaerf</h2>
+			<h2>Student: Marco Magnani, 1532000</h2>
+			<br/>
+			<br/>
+			<span>Ianna's plane is a simple game, where the user can use the keyboard to dodge the bullets.</span>
+			<br/><br>
+			<span><u>Commands:</u> Left arrow, right arrow and mouse to move the camera.</span>
+			<br/><br>
+			<span>Enjoy ;)</span>
+			<br/><br/>
+			<span><u>Difficult(number of bad bullets)</u>:
+				<select required id="diff" onChange="setDiff()">
+					<option value="10">Easy</option>
+					<option value="20">Normal</option>
+					<option value="30">Hard</option>
+				</select>
+			</span>
+			<br><br>
+			<a href="iannaPlane.html">Go to the game</a>
+		</div>
+	</body>
+</html>
